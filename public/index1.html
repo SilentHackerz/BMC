@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Business Model Canvas</title>
+    <link rel="stylesheet" type="text/css" href="index1.css">
+</head>
+<script src="index1.js"></script> 
+<body>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <div class="container-fluid">
+          
+          <div class="row"> <!-- start header -->
+           <form action="/" method="POST">
+            <div class="col-md-5">
+              
+              <h1>The Business Model Canvas</h1>
+            </div>  
+            <div class="col-md-7">     
+              <div class="row">  
+                  <div class="col-sm-6 col-md-3"><label>Designer For:</label><input type="email" name="fromaddress" placeholder="From Email"/> </div>
+                  <div class="col-sm-6 col-md-3"><label>By:</label><input type="email" name="toaddress" placeholder="To Email Address"/></div>
+                  <div class="col-sm-6 col-md-3"><label>Date:</label><input /></div>
+                  <div class="col-sm-6 col-md-3"><label>Version:</label><input value="v1" /></div>
+                </div>  
+             </div>
+          </div><!-- end header row -->
+              
+         <hr />
+              
+          <div class="row">
+              <div class="col-sm-2 col-md-2">
+                  <textarea name = "keypartners" placeholder="Key Partners"></textarea>
+              </div>
+               <div class="col-sm-3">
+                 <div class="row">
+                   <div class="col-xs-12">
+                     <textarea name = "keyactivities" placeholder="Key Activities"></textarea>
+                   </div> 
+                   <div class="col-xs-12"> 
+                     <textarea name = "keyresources" placeholder="Key Resources"></textarea>
+                   </div> 
+                 </div>
+              </div>
+              <div class="col-sm-2">
+                 <textarea name = "valuepropositions" placeholder="Value Propositions"></textarea>
+              </div>
+               <div class="col-sm-3">
+                 <div class="row">
+                   <div class="col-xs-12">
+                      <textarea name = "customerrelationships" placeholder="Customer Relationships"></textarea>
+                   </div> 
+                   <div class="col-xs-12">          
+                     <textarea name = "channels" placeholder="Channels"></textarea>
+                   </div> 
+                 </div>
+              </div>
+             <div class="col-sm-2">
+               <textarea name = "customersegments" placeholder="Customer segments"></textarea>
+              </div>
+           </div>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <textarea name = "coststructure" placeholder="Cost Structure"></textarea>
+            </div> 
+            <div class="col-md-6">
+              <textarea name = "revenuestreams" placeholder="Revenue Streams"></textarea>
+            </div>
+          </div>
+              
+        </div> <!-- end container fluid -->
+
+        
+        <div class="left_btn">
+                <button class="mah_btn" onclick="myprint()">Print</button>
+                <button class="mah_btn" onClick="window.location.reload()">Reset</button>
+               
+              </div>
+              <input type="submit" value="Send Request">   
+      </form>
+
+        <tbody>
+          <tr>
+            <td>
+              <a class="cut" title="Remove Item">-</a>
+              <span contenteditable></span>
+            </td>
+            <td>
+              <span contenteditable></span>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+      <a class="add noprint" title="Add Item">+</a>
+      <div class="right_tax">
+      <table class="balance" id="balance">
+        <tbody>
+
+        </tbody>
+      </table> 
+      </div>     
+	</div>
+</body>
+</html>
